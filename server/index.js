@@ -13,8 +13,8 @@ massive(CONNECTION_STRING)
   })
   .catch(err => console.log(err));
 
-app.get("/api/products", controller.getProducts);
-app.put("./api/products/:id", controller.add);
+app.get("/api/inventory", controller.getProducts);
+// app.put("./api/products/:id", controller.add);
 
 app.listen(SERVER_PORT, () =>
   console.log(`server listening on port ${SERVER_PORT}`)
